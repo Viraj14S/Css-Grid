@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=/*-, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .items {
+        color: white;
+        background-color: burlywood;
+        border: 2px solid black;
+        padding: 20px;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        
+    }
+    .nav a:hover {
+        color: rgb(0, 125, 241);
+        background: white;
+        border-radius: 9px;
+
+   padding: 12px 17px;
+        
+    }
+
+    .nav {
+        grid-area: nav;
+        text-align: center;
+
+    }
+
+    .section {
+        grid-area: section;
+
+    }
+
+    .aside {
+        grid-area: aside;
+    }
+
+    .footer {
+        grid-area: footer;
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'nav nav nav nav'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    @media (max-width:300px) {
+        body {
+            background-color: brown;
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media(min-width:300px) and (max-width:500px) {
+        body {
+            background-color: aqua;
+            .nav a:hover {
+        color: rgb(0, 125, 241);
+        background: white;
+        border-radius: 9px;
+        
+   padding: 1px 4px;
+        
+    }
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        .aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media(min-width:500px) and (max-width:800px) {
+        body {
+            background-color: rgb(0, 140, 255);
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+        }
+    }
+
+    @media (min-width:800px) {
+
+        body {
+            background-color: rgb(66, 16, 0);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="nav items">
+            <span><a href="">Home</a></span>
+            <span><a href="">Support</a></span>
+            <span><a href="">About us</a></span>
+        </div>
+        <div class="section items">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sunt impedit aliquid illum a sequi quaerat, necessitatibus dolorem optio vitae nisi, animi fugiat velit nulla! Illo esse nihil libero odit possimus! Soluta id voluptas recusandae doloribus facere ducimus eligendi magnam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum enim doloremque repellendus, modi sapiente odio error saepe aliquid delectus. Ab veniam perspiciatis, quibusdam consequuntur quaerat in eveniet unde iusto eum. Laboriosam voluptates sequi, minima accusamus cum exercitationem repudiandae molestias culpa error, enim pariatur tempore. Itaque deleniti eos ab harum nihil eaque blanditiis deserunt asperiores facere, sed repellat praesentium natus voluptatibus accusantium quos explicabo delectus, ea at fuga perferendis. Inventore, eos praesentium? Quos omnis quisquam necessitatibus illo nam officia animi ullam ab quam exercitationem, ipsum incidunt in ea esse libero cum. Facilis maiores nesciunt a tempore doloremque tenetur itaque debitis ad neque ex at odio earum minima porro, omnis est eaque eligendi sed dolorum delectus blanditiis nisi! Voluptate blanditiis laudantium libero eos totam ad necessitatibus quod quis neque facere vitae debitis quisquam illum velit maxime labore, molestias eaque perferendis ipsum dolorum consequuntur eligendi voluptates. Minus, tempore harum soluta consequatur quas facere quisquam accusamus nemo excepturi temporibus quia nisi laudantium veritatis recusandae libero illum earum id incidunt est. Itaque beatae adipisci, eveniet hic vero quia animi, mollitia nostrum rem maiores est earum repellendus odit debitis voluptate voluptatem sunt alias at id modi impedit recusandae officiis blanditiis tenetur. Autem amet natus voluptates ut! Soluta deserunt reiciendis ex voluptate reprehenderit porro excepturi velit nesciunt quis omnis. Earum rem ipsam soluta nemo ut recusandae esse inventore mollitia accusamus minus voluptatem quisquam cumque fugiat itaque ipsum, similique quae ea incidunt laudantium. Ducimus, tenetur eaque dicta alias blanditiis ab officiis, aliquid quasi ea repudiandae culpa quisquam dolore porro ratione obcaecati illo quis! Maiores earum iusto obcaecati veniam autem commodi tempore qui nesciunt praesentium, quaerat id nulla deleniti dolor voluptatibus. Odio, ea! Nam ipsum dicta assumenda vitae rerum, vero quod pariatur soluta magni error autem nihil voluptatem, odio molestiae. Suscipit, nam enim numquam dolore voluptate repellat. Maiores reprehenderit asperiores totam nam quis odit corrupti placeat? Corrupti inventore iure repudiandae exercitationem nesciunt error perferendis quibusdam numquam voluptas vero dolorem debitis doloribus sunt est in cumque aspernatur deleniti mollitia reiciendis, nam veritatis eaque. Facilis dignissimos, quae consectetur ex doloribus natus voluptas tempora quo expedita, dolore molestias autem porro earum voluptate necessitatibus laborum et pariatur ea corrupti quas modi in fugiat a commodi. Obcaecati vel alias corporis omnis fugit quis ab nostrum repellat quidem, distinctio dolorem rem cum dolor libero veniam vitae aliquam, quaerat tempore, officiis praesentium eum. Numquam laudantium optio voluptas, corrupti dolorem vero at illum commodi enim libero placeat officia voluptatum repellat quam veniam aut esse? Dolorem neque iure sed nam exercitationem ipsam tenetur est a totam voluptatem distinctio vitae quaerat magnam nisi ex, beatae cumque. Aliquid ipsum, dolores culpa veritatis, itaque reprehenderit accusantium, nihil aspernatur enim sunt ipsam similique qui? Iure amet hic sed deleniti incidunt aspernatur, quo at omnis illo cupiditate inventore ex id.
+            </h2>
+        </div>
+        <div class="aside items">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, consequuntur? Quam quas recusandae alias? Molestias quia provident debitis voluptate! Nulla qui, officia quidem tenetur itaque quisquam, laborum praesentium voluptatem neque quis rem atque. Eveniet eaque et amet corporis totam eum eos dicta perferendis sint exercitationem nostrum repudiandae eligendi ipsam voluptas, cum tenetur molestias consequatur asperiores harum. Iste dolores quam omnis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi officiis fugit quia debitis minus vel? Ipsam harum atque error doloremque corrupti adipisci reprehenderit quam minus vitae, dignissimos asperiores magnam obcaecati iste laborum recusandae qui dolore ex ducimus nulla culpa. Dolores perferendis ducimus sit, vel vitae, mollitia saepe dolor tenetur, iure doloribus nobis natus fugiat enim sequi deleniti minus officiis? Dicta eum nemo placeat nesciunt temporibus voluptatum eius aperiam? Saepe dolores sint, minus nihil ipsum quam reprehenderit cumque alias cum incidunt officiis vitae dicta tempora ex in assumenda, nesciunt at culpa! In enim veniam recusandae? Optio, nam? Nam eligendi quam ipsa reiciendis error ducimus, sunt odio fuga doloremque voluptatum totam eum? Fugit modi pariatur alias dolore debitis perferendis beatae cupiditate culpa vero! Aperiam aut adipisci eos dolor cum voluptas cumque numquam, ut laboriosam unde est similique quam deleniti consectetur delectus doloremque nisi veniam maiores nesciunt quaerat dolore nihil! Qui sapiente explicabo numquam laudantium? Minus incidunt amet debitis architecto tempora laudantium magni explicabo. Repellendus temporibus odit est dolores nihil eum repellat, cupiditate adipisci eos vel minima modi consequuntur quae molestiae! Accusantium atque aspernatur quasi! Harum nostrum magnam quae voluptas exercitationem necessitatibus possimus quam, dolorum maiores at atque neque aliquid numquam facere quis officia sed sint soluta, in eligendi eaque doloremque vitae, amet consequatur? Ipsam sapiente, molestias ea impedit ut omnis odio doloremque eos reprehenderit quaerat totam, sunt perspiciatis aperiam sed sint quis. Animi aperiam beatae neque tenetur, dolor perferendis asperiores necessitatibus totam quidem omnis nam nesciunt illo ut, ex saepe dolores eius nulla ullam suscipit temporibus.</h3>
+        </div>
+        <footer class="footer items">Copyright by Viraj Sonawane</footer>
+    </div>
+</body>
+
+</html>
